@@ -1,0 +1,110 @@
+{
+  "name": "react_ts_web_app_template",
+  "version": "1.0.0",
+  "description": "React TypeScript template for web applications.",
+  "author": "Ulises Schreiner",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "prepare": "husky",
+    "clean": "rimraf dist node_modules .turbo .tsbuildinfo coverage",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prerelease:checks": "npm run lint && npm run typecheck && npm run test:coverage && npm run build"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@eslint/eslintrc": "^3.3.3",
+    "@eslint/js": "^9.39.2",
+    "@testing-library/jest-dom": "^6.4.0",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "@vitest/coverage-v8": "^2.1.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "husky": "^9.0.0",
+    "jsdom": "^24.0.0",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.3.0",
+    "rimraf": "^6.0.0",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.6.0",
+    "vite": "^5.4.0",
+    "vitest": "^2.1.0"
+  },
+  "standard-version": {
+    "skip": {
+      "tag": false
+    },
+    "scripts": {
+      "postbump": "npx prettier --write CHANGELOG.md package.json"
+    },
+    "types": [
+      {
+        "type": "feat",
+        "section": "Features"
+      },
+      {
+        "type": "fix",
+        "section": "Bug Fixes"
+      },
+      {
+        "type": "perf",
+        "section": "Performance"
+      },
+      {
+        "type": "refactor",
+        "section": "Refactors"
+      },
+      {
+        "type": "docs",
+        "section": "Docs",
+        "hidden": false
+      },
+      {
+        "type": "chore",
+        "section": "Chores",
+        "hidden": true
+      },
+      {
+        "type": "test",
+        "section": "Tests",
+        "hidden": true
+      }
+    ]
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,mdx,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
