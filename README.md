@@ -1,13 +1,11 @@
 # React + TypeScript App Template
 
-[![CI](https://img.shields.io/github/actions/workflow/status/UlisesNiSchreiner/react_ts_web_app_template/ci.yml?label=CI)](https://github.com/UlisesNiSchreiner/react_ts_web_app_template/actions)
-[![Coverage](https://codecov.io/gh/UlisesNiSchreiner/react_ts_web_app_template/branch/main/graph/badge.svg)](https://codecov.io/gh/UlisesNiSchreiner/react_ts_web_app_template)
+[![Coverage](https://codecov.io/gh/UlisesNiSchreiner/react_ts_web_app_template/branch/master/graph/badge.svg)](https://codecov.io/gh/UlisesNiSchreiner/react_ts_web_app_template)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Node](https://img.shields.io/badge/Node-18%2B-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
 ![React](https://img.shields.io/badge/React-18.x-61dafb)
 ![Last Commit](https://img.shields.io/github/last-commit/UlisesNiSchreiner/react_ts_web_app_template)
-![Stars](https://img.shields.io/github/stars/UlisesNiSchreiner/react_ts_web_app_template?style=social)
 
 A clean and production-ready starter template for building **React applications with TypeScript**.
 
