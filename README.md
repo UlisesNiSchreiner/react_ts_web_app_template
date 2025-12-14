@@ -9,6 +9,8 @@
 
 A clean and production-ready starter template for building **React applications with TypeScript**.
 
+![api architecture](assets/api-rest-architecture.png)
+
 - ⚡ Vite + React + TypeScript  
 - ✅ Testing setup with Vitest & Testing Library (with coverage)  
 - 🧹 ESLint, Prettier, Husky, lint-staged, and commitlint  
