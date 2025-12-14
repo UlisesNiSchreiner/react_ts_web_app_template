@@ -1,28 +1,39 @@
 # React + TypeScript App Template
 
-Template para crear **aplicaciones React + TypeScript** listas para producción:
+[![CI](https://img.shields.io/github/actions/workflow/status/UlisesNiSchreiner/react_ts_web_app_template/ci.yml?label=CI)](https://github.com/UlisesNiSchreiner/react_ts_web_app_template/actions)
+[![Coverage](https://codecov.io/gh/UlisesNiSchreiner/react_ts_web_app_template/branch/main/graph/badge.svg)](https://codecov.io/gh/UlisesNiSchreiner/react_ts_web_app_template)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Node](https://img.shields.io/badge/Node-18%2B-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
+![React](https://img.shields.io/badge/React-18.x-61dafb)
+![Last Commit](https://img.shields.io/github/last-commit/UlisesNiSchreiner/react_ts_web_app_template)
+![Stars](https://img.shields.io/github/stars/UlisesNiSchreiner/react_ts_web_app_template?style=social)
 
-- ⚡ Vite + React + TypeScript
-- ✅ Tests + Coverage (Vitest + Testing Library)
-- 🧹 ESLint + Prettier + Husky + lint-staged + commitlint
-- 🚀 CI/CD con GitHub Actions + Codecov
-- 🧱 LibFlow (branching model orientado a producto)
-- 🐳 Dockerfile optimizado (Nginx) para usar detrás de un load balancer (DigitalOcean, etc.)
+A clean and production-ready starter template for building **React applications with TypeScript**.
 
-## 🔧 Scripts principales
+- ⚡ Vite + React + TypeScript  
+- ✅ Testing setup with Vitest & Testing Library (with coverage)  
+- 🧹 ESLint, Prettier, Husky, lint-staged, and commitlint  
+- 🚀 CI/CD using GitHub Actions + Codecov  
+- 🧱 LibFlow (branching model tuned for product development)  
+- 🐳 Production-optimized Dockerfile using Nginx — ready for load balancers (DigitalOcean, etc.)  
 
-- `npm run dev` – servidor de desarrollo (Vite)
-- `npm run build` – build de producción optimizado
-- `npm run preview` – sirve el build localmente
-- `npm run lint` – linting con ESLint
-- `npm run format` – formateo con Prettier
-- `npm run typecheck` – verificación de tipos con TypeScript
-- `npm run test` – tests con Vitest
-- `npm run test:coverage` – tests con coverage
+## 🔧 Core Scripts
 
-## 🧱 Estructura del proyecto
+| Command                 | Description |
+|------------------------|-------------|
+| `npm run dev`          | Start the development server (Vite) |
+| `npm run build`        | Create an optimized production build |
+| `npm run preview`      | Serve the production build locally |
+| `npm run lint`         | Run ESLint |
+| `npm run format`       | Format code using Prettier |
+| `npm run typecheck`    | TypeScript type validation |
+| `npm run test`         | Run unit tests (Vitest) |
+| `npm run test:coverage`| Run tests with coverage reporting |
 
-```txt
+## 🧱 Project Structure
+
+```
 .
 ├── src/
 │   ├── App.tsx
@@ -39,20 +50,22 @@ Template para crear **aplicaciones React + TypeScript** listas para producción:
 └── Dockerfile
 ```
 
-## 🐳 Docker (Producción)
+## 🐳 Docker (Production)
 
-Build de la imagen:
+Build the container image:
 
 ```bash
 docker build -t react-ts-app-template .
 ```
 
-Run local:
+Run it locally:
 
 ```bash
 docker run --rm -p 8080:80 react-ts-app-template
 ```
 
-Luego abrí:
+Open:
 
-- `http://localhost:8080`
+```
+http://localhost:8080
+```
