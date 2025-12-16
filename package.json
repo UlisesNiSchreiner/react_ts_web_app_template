@@ -6,6 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "init-template": "node scripts/init-template.mjs",
     "prepare": "husky",
     "clean": "rimraf dist node_modules .turbo .tsbuildinfo coverage",
     "dev": "vite",
