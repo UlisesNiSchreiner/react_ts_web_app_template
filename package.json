@@ -1,11 +1,12 @@
 {
-  "name": "react_ts_web_app_template",
+  "name": "react-ts-web-app-template",
   "version": "1.0.0",
   "description": "React TypeScript template for web applications.",
   "author": "Ulises Schreiner",
   "license": "MIT",
   "private": true,
   "scripts": {
+    "init-template": "node scripts/init-template.mjs",
     "prepare": "husky",
     "clean": "rimraf dist node_modules .turbo .tsbuildinfo coverage",
     "dev": "vite",
