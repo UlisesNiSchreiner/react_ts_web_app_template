@@ -45,5 +45,5 @@ jobs:
           use_oidc: true
           files: ./coverage/lcov.info
           flags: unit
-          fail_ci_if_error: true
+          fail_ci_if_error: false
           verbose: true
